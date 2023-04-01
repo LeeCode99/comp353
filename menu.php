@@ -30,4 +30,5 @@
     <li><a href="Infection.php">Infection</a> </li>
     <li><a href="Vaccination.php">Vaccination</a> </li>
     <li><a href="Schedule.php">Schedule</a></li>
+    <li><a href="Query8.php">Query8</a></li>
 </ul>
