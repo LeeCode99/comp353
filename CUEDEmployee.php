@@ -110,10 +110,10 @@
             <tr>
 
                 <th>Employee ID: </th>
-                <th><input type="text" name="EID" value=<?php if ($_GET['Actions'] == "Create")
+                <th><input type="text" name="EID" value=<?php if ($_GET['Actions'] == "Create") {
                                                             echo $row[0] + 1;
-                                                        else echo $row[0];
-                                                        ?>></th>
+                                                        } else echo $row[0];
+                                                        ?> readonly></th>
             </tr>
             <tr>
                 <th>Email Address: </th>

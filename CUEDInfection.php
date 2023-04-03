@@ -63,7 +63,7 @@
                 <th><input type="text" name="IID" value=<?php if ($_GET['Actions'] == "Create")
                                                             echo $row[0] + 1;
                                                         else echo $row[0];
-                                                        ?>></th>
+                                                        ?> readonly></th>
             </tr>
             <tr>
                 <th>Infection Type: </th>
