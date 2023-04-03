@@ -66,7 +66,7 @@
         echo "0 results";
     }
     echo "</form>";
-    $conn->close();
+    $conn->close(); 
     ?>
 </BODY>
 

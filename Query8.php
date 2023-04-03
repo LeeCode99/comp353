@@ -28,12 +28,12 @@
     }
 
     $sql1 = "select distinct EmployeeID from Work_at order by EmployeeID;";
-    
+
     $result = $conn->query($sql1);
 
-    echo "<form method='GET' action='CUEDQuery8.php?' >";
-    echo "<input type='submit' name='Actions' value='Details'>";
-    
+    echo "<form method='POST' action='CUEDQuery8.php?' >";
+    echo "<input type='submit' name='Actions' value='Details'/>";
+
     if ($result->num_rows > 0) {
         echo "<table border='1 solid black'> 
         <tr>
@@ -41,15 +41,18 @@
         </tr>";
 
         echo "<tr>
-        <th><select>";
-    
+         <th>
+
+        <select name='select1'>";
+
         $result = $conn->query($sql1);
         while ($row = $result->fetch_row()) {
-            echo "<option value=" . $row[0] . ">" . $row[0] . "</option>";
+            echo "<option name='eid' value=" . $row[0] . ">" . $row[0] . "</option>";
         }
     } else {
         echo "0 results";
     }
+    
     echo "</th></select></tr></form>";
     $conn->close();
     ?>
