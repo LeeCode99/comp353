@@ -18,13 +18,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
     if ($_SERVER["REQUEST_METHOD"] == 'POST') {
-        //     $sql = "select 
-        //     EmployeeID,
-        //     StartDate,
-        //     EndDate,
-        //     Facility_ID
-        //  from Work_at order by EmployeeID, Facility_ID";
-
+     
         $eid = $_POST["EID"];
         $startd = $_POST["startdate"];
         $endd = $_POST["enddate"];
