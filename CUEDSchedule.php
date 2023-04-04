@@ -35,7 +35,7 @@
                  VALUES (" . $eid . ",'" . $startd . "','" . $endd . "'," . $fid . "); ";
         }
         if ($_POST['Actions'] == "Edit") {
-            $SQLActions = "UPDATE Work_at SET StartDate='" . $startd . "', EndDate='" . $endd . "', Facility_ID=" . $fid . " Where EmployeeID = " . $eid . ";";
+            $SQLActions = "UPDATE Work_at SET StartDate= '" . $startd . "00:00:00.000', EndDate= '" . $endd . "00:00:00.000', Facility_ID = " . $fid . " Where EmployeeID = " . $eid . ";";
         }
         if ($_POST['Actions'] == "Delete") {
             $SQLActions = "Delete from Work_at where EmployeeID = " . $eid . ";";
