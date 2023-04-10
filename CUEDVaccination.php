@@ -61,7 +61,11 @@ $row = $result->fetch_row();
             <th><input type="text" name="VID" value=<?php if($_GET['Actions']=="Create")
                     echo $row[0]+1;
                 else echo $row[0];
+<<<<<<< HEAD
                 ?>></th>
+=======
+                ?> readonly></th>
+>>>>>>> giwon
         </tr>
         <tr>
             <th>Infection Type: </th>
